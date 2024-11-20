@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body {
+    margin: 0;
+    text-align: center;
+    font-family: arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrap {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box {
+    background-color: lightgrey;
+    min-width: 300px;
+    min-height: 300px;
+    width: 18vw;
+    height: 18vw;
+    margin: 1vw;
+    padding: 25px;
+    border-radius: 10px;
+
+    /* aligns text (and anything else) in the middle of the box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box h2 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color: #ff8a46;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* add the 'drive' class to the bus image if you want the bus to have a little driving animation */
+.drive {
+    animation-name: drive;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes drive {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.wcd-bkg {
+    background-image: url(../imgs/wcd.png);
+    background-size: cover;
+}
