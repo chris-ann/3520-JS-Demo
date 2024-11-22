@@ -72,3 +72,9 @@ a {
     background-image: url(../imgs/wcd.png);
     background-size: cover;
 }
+
+.tv {
+    background-image: url("../imgs/tv.jpeg");
+    background-size: cover;
+    background-position: center;
+}
